@@ -1,0 +1,32 @@
+.circle{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+  width: 100%;
+  height: calc(100% - 60px);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.images-block{
+  display: flex;
+  flex-wrap: wrap;
+}
+.slide-up.enter-active{
+  transition: .4s ease;
+  animation: fadeIn .6s forwards;
+}
+
+@keyframes fadeIn {
+  from{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
